@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { getMonth } from "./utils";
+  import { getMonth } from "$lib/utils";
+  import Button from "./Button.svelte";
 
   const { setOffset, offset } = $props<{
     offset: number;
@@ -20,11 +21,11 @@
   <h2 class="calendarYear">{year}</h2>
 
   <div>
-    <button onclick={() => setOffset(offset - 1)}> Prev </button>
+    <Button onclick={() => setOffset(offset - 1)}>Prev</Button>
 
-    <button onclick={() => setOffset(0)}> Now </button>
+    <Button onclick={() => setOffset(0)} disabled={offset === 0}>Now</Button>
 
-    <button onclick={() => setOffset(offset + 1)}> Next </button>
+    <Button onclick={() => setOffset(offset + 1)}>Next</Button>
   </div>
 </header>
 

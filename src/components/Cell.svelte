@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { indexToDay } from "./utils";
+  import { indexToDay } from "$lib/utils";
 
   const { rowIndex, columnIndex, firstDayofMonth, daysInMonth, todayDay } =
     $props<{

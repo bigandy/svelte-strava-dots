@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Calendar from "./lib/Calendar.svelte";
+  import Calendar from "$components/Calendar.svelte";
 </script>
 
 <div class="App">
   <header class="Header">
-    <h1>Solid Strava Dots</h1>
+    <h1>Svelte Calendar Dots</h1>
   </header>
 
   <h2>Regular Calendar with no data</h2>

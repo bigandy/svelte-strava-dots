@@ -3,9 +3,12 @@
   import TableHeader from "./TableHeader.svelte";
   import TableBody from "./TableBody.svelte";
 
-  const { initialOffset } = $props<{
+  interface Props {
     initialOffset?: number;
-  }>();
+  }
+
+  const { initialOffset } = $props<Props>();
+
   let offset = $state(initialOffset ?? 0);
 
   const setOffset = (newOffset: number) => {

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { getMonth } from "./utils";
+  import { getMonth } from "$lib/utils";
   import Cell from "./Cell.svelte";
 
   interface Props {
