@@ -20,13 +20,11 @@
   const dayName = indexToDay(columnIndex + 1);
 </script>
 
-<td>
-  {isCalendarDay ? `${dayName} - ${dayNumber}` : ""}<br />
-  {isToday ? "today" : ""}
+<td class:calendarDay={isCalendarDay} class:calendarDayActive={isToday}>
   <span class="dayName vh">
     {dayName}
   </span>
-  <span>
+  <span class="dayCount">
     {isCalendarDay ? dayNumber : ""}
   </span>
 </td>

@@ -17,15 +17,13 @@
   {#each [...new Array(rows)] as _, rowIndex}
     <tr>
       {#each [...new Array(7)] as _, columnIndex}
-        <td>
-          <Cell
-            {rowIndex}
-            {columnIndex}
-            {firstDayofMonth}
-            {todayDay}
-            {daysInMonth}
-          />
-        </td>
+        <Cell
+          {rowIndex}
+          {columnIndex}
+          {firstDayofMonth}
+          {todayDay}
+          {daysInMonth}
+        />
       {/each}
     </tr>
   {/each}

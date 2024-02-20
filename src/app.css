@@ -155,10 +155,14 @@ header {
   cursor: pointer;
 }
 
+.medium,
+.long {
+  display: none;
+}
+
 @container (inline-size > 400px) {
   .medium {
     display: inline-block;
-    background: red;
   }
 
   .month-buttons {
@@ -296,5 +300,12 @@ header {
   .calendarDayActive {
     --dot-color: red;
     --dot-background: red;
+  }
+}
+
+@container (inline-size > 1000px) {
+  .year-buttons,
+  .long {
+    display: inline-block;
   }
 }

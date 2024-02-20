@@ -32,8 +32,6 @@
 </thead>
 
 <style>
-  .medium,
-  .long {
-    display: none;
+  :root {
   }
 </style>
