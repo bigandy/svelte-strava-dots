@@ -1,6 +1,7 @@
 <script lang="ts">
   import Header from "./Header.svelte";
   import TableHeader from "./TableHeader.svelte";
+  import TableBody from "./TableBody.svelte";
 
   const { initialOffset } = $props<{
     initialOffset?: number;
@@ -16,9 +17,6 @@
   <Header {offset} {setOffset} />
   <table>
     <TableHeader />
-    <!-- <TableBody {offset} {showDots} /> -->
+    <TableBody {offset} />
   </table>
 </div>
-
-<style>
-</style>
